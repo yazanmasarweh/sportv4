@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/lib/hamburger.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+        <link rel="stylesheet" href="./assets/style.css">
+        <title>سبورت بلس</title>
+    </head>
+<body>
+   <!-- محتوى التطبيق كامل  -->
+    <div class="overflow-hidden" id="app">
+        <!--   الناف بار يحتوي على ثلالث مستويات العلى و الاوسط و الادنى  -->
+        <div class="navbar-app position-relative d-flex flex-column">
+              <!--   الناف بار الاعلى   -->
+            <div class="nav-top container">
+                <ul class="list-unstyled p-0 m-0 h-100 d-flex align-items-center gap-4 gap-sm-5">
+                    <li>
+                        <a href="#" class="icon-nav fs-6" data-bs-toggle="tooltip"  data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="فيسبوك">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a href="#">
+                    </li>
+                    <li>
+                        <a href="#" class="icon-nav fs-6" data-bs-toggle="tooltip"  data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="انستجرام">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a href="#">
+                    </li>
+                    <li>
+                        <a href="#" class="icon-nav fs-6" data-bs-toggle="tooltip"  data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="تويتر">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a href="#">
+                    </li>
+                    <li>
+                        <a href="#" class="icon-nav fs-6" data-bs-toggle="tooltip"  data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="تكتوك">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a href="#">
+                    </li>
+                    <li class="language-nav position-relative h-100 d-flex align-items-center justify-content-center px-2">
+                        <div data-bs-toggle='dropdown' aria-expanded='true' class="show">
+                          <span style="font-size: 12px;" class="ms-1">AR</span><i class="fa-solid fa-chevron-down"></i>  
+                        </div>
+                        <ul class="dropdown-menu position-absolute m-0 text-end">
+                            <li><a class="dropdown-item" href="#">العربية</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">中文</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+              <!--  ناف بار اوسط   -->
+            <div class="nav-middle-bg">
+                <div class="nav-middle d-flex gap-4 gap-md-5 h-100 align-items-center container">
+                    <div class="user-box">
+                        <div class="img-user position-relative rounded-circle">
+                            <img class="w-100 h-100" src="./assets/images/user.png" alt="">
+                            <span class="position-absolute rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-chevron-down"></i> 
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </span> 
+                        </div>
+                        <div class="user-info position-absolute mt-1">
+                            <ul class="list-group m-0 p-0">
+                                <li class="list-group-item active" aria-current="true">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>مرحبا محمد</span> 
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" >
+                                      <i class="fa-solid fa-user-gear"></i> بروفايل 
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" >
+                                        <i class="fa-solid fa-right-to-bracket"></i> تسجيل دخول
+                                    </a> 
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" >
+                                        <i class="fa-solid fa-id-card"></i> تسجيل عضوية
+                                    </a> 
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" >
+                                        <i class="fa-solid fa-right-from-bracket"></i> تسجيل خروج
+                                    </a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search large position-relative">
+                        <input class="w-100 border-0 p-2" type="search" placeholder="البحث السريع">
+                        <span class="position-absolute"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+            </div>
+              <!--   ناف بار ادنى  -->
+            <div class="nav-botn d-flex position-relative justify-content-between container">
+                <div class="nav-botn-large">
+                    <ul class="nav-box h-100 list-unstyled m-0 p-0 d-flex align-items-center gap-0 gap-lg-2 gap-xl-5">
+                        <li class="btn-show h-100 d-flex align-items-center active px-2"><a href="./index.html">الرئيسية</a></li>
+                        <li class="btn-show h-100 position-relative d-flex align-items-center px-2" data-x="news-box">
+                            <a href="./_news.html">
+                                الاخبار <i class="fa-solid fa-chevron-down"></i> 
+                            </a>
+                            <div class="news-box position-absolute">
+                                <ul class="list-group m-0 p-0">
+                                    <li class="list-group-item">
+                                        <a href="#">جميع الاخبار</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">اخبار دولية</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">اخبار محلية</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="btn-show position-relative h-100 d-flex align-items-center px-2" data-x="match-box">
+                            <a href="./_soccer-standings.html">
+                               الدوريات <i class="fa-solid fa-chevron-down"></i> 
+                            </a>
+                            <div class="match-box position-absolute">
+                                <ul class="list-group m-0 p-0">
+                                    <li class="list-group-item">
+                                        <a href="#"> دوري ابطال وروبا</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">دوري الانجليزي</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">الدوري الاسباني </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">الدوري القطري </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">الدوري المصري </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">الدوري السعودي </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">الدوري الامراتي </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="btn-show position-relative h-100 d-flex align-items-center px-2" data-x="league-box">
+                            <a href="./_soccer-schedule.html">
+                               المباريات <i class="fa-solid fa-chevron-down"></i> 
+                            </a>
+                            <div class="league-box position-absolute">
+                                <ul class="list-group m-0 p-0">
+                                    <li class="list-group-item">
+                                        <a href="#">برشلونه × السد المصري</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">ريالمدريد × السد لاقطري</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">شبيليا × السد السعودي</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="btn-show position-relative h-100 d-flex align-items-center px-2">
+                            <a href="./_soccer-results.html">
+                                نتائج المباريات
+                            </a>
+                        </li><li class="btn-show position-relative h-100 d-flex align-items-center px-2">
+                            <a href="_club.html">
+                               النوادي 
+                            </a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="nav-botn-small d-flex h-100 align-items-center">
+                    <button class="hamburger hamburger--arrowturn border-0 h-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>  
+                <div class="part-box"></div> 
+                <img  class="logo d-block position-absolute" src="./assets/images/logo.png" alt="">
+            </div>   
+        </div>
+        <!--  المنيو لا يظهر الا في حال كنت بشاشة صغيرة بحيث يستعرض النافات السابقة بششكل مختصر -->
+        <div class="offcanvas h-100 offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header position-relative">
+                <h5 class="offcanvas-title m-auto" id="staticBackdropLabel">
+                    <img width="200px" src="./assets/images/logo.png" alt="">
+                </h5>
+                <button class="hamburger back hamburger--elastic position-absolute" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <div class="line m-auto"></div>
+            <div class="offcanvas-body">
+                <ul class="list-unstyled p-0 m-0 d-flex flex-column gap-1">
+                    <li class="item-slider">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="py-1 px-2" href="./index.html">الرئيسية</a>
+                        </div>
+                    </li>
+                    <li class="item-slider">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="py-1 px-2" href="./_news.html">الاخبار</a>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="list-unstyled p-0 m-0">
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-slider">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="py-1 px-2" href="./_soccer-standings.html">الدوريات</a>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="list-unstyled p-0 m-0">
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-slider">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="py-1 px-2" href="./_soccer-schedule.html">المباريات</a>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="list-unstyled p-0 m-0">
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                            <li><a class="pe-4 py-1" href="#">الرئيسية</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-slider">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="py-1 px-2" href="./_soccer-results.html">نتائج المباريات</a>
+                        </div>
+                    </li> 
+                    <li class="item-slider">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="py-1 px-2" href="./_club.html">النوادي</a>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        <div class="bannerhead">
+            <img  src="./assets/images/banner/banarqater.png" alt="">
+            <div class="taitle-page">
+                <h1>الاخبار <span>الكروية</span></h1>
+                <ul class="list-unstyled p-0 m-0 d-flex gap-2 align-items-center justify-content-center">
+                    <li>الرئيسية</li>
+                    <li class="slash">/</li>
+                    <li>الاخبار</li>
+                    <li class="slash">/</li>
+                    <li class="active">الدوري الوروبي</li>
+                </ul>
+            </div>
+        </div>
+        <!-- بدي المشروع -->
+        <div class="container mt-5 mb-5">
+            <div class="content-aside">
+                <div class="head d-flex rounded-1 px-4 py-3 shadow-sm align-items-center justify-content-between">
+                    <h2 class="fs-5 fs-md-4">اخبار الكورة</h2> 
+                    <ul class="link-tags-head list-unstyled p-0 m-0 d-flex gap-3 gap-md-4 fs-6">
+                         <li><a class="active" href="#">الجميع</a></li>   
+                         <li><a href="#">دوري الاول</a></li>   
+                         <li><a href="#">الدوري الثاني</a></li>   
+                         <li><a href="#">الدوري الثالث</a></li>   
+                         <li><a href="#">الدوري الرابع</a></li>   
+                    </ul>
+                 </div>
+                <div class="table-responsive">
+                    <table class="table mb-0 align-middle bg-white table-hover text-center">
+                        <thead>
+                            <tr class="t-head">
+                                <th scope="col">التاريخ</th>
+                                <th scope="col">الوقت</th>
+                                <th scope="col">الفائز</th>
+                                <th scope="col">الخاسر</th>
+                                <th scope="col">النتيجة</th>
+                                <th scope="col">الحالة</th>
+                                <th scope="col">السيطرة</th>
+                                <th scope="col">الركلات </th>
+                                <th scope="col">مخالفات</th>
+                                <th scope="col">عرض تفاصيل </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/1.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/6.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="./_last-result-match.html" class="btn-schedule bg-transparent  p-1">تفصيل
+                                        المبارة</a></td>
+                            </tr>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/2.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/5.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="#" class="btn-schedule bg-transparent p-1">تفصيل المبارة</a></td>
+                            </tr>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/5.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/6.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="#" class="btn-schedule bg-transparent p-1">تفصيل المبارة</a></td>
+                            </tr>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/3.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/2.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="#" class="btn-schedule bg-transparent p-1">تفصيل المبارة</a></td>
+                            </tr>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/4.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/5.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="#" class="btn-schedule bg-transparent p-1">تفصيل المبارة</a></td>
+                            </tr>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/6.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/2.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="#" class="btn-schedule bg-transparent p-1">تفصيل المبارة</a></td>
+                            </tr>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/3.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/1.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="#" class="btn-schedule bg-transparent p-1">تفصيل المبارة</a></td>
+                            </tr>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/6.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/3.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="#" class="btn-schedule bg-transparent p-1">تفصيل المبارة</a></td>
+                            </tr>
+                            <tr class="t-body result">
+                                <td>10/05/2022</td>
+                                <td>10:15</td>
+                                <td class="win">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/2.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td class="lost">
+                                    <img class="me-1 ms-2" width="25px" height="25px" src="./assets/images/club/32/5.png"
+                                        alt="">
+                                    <span>اسم فريق</span>
+                                </td>
+                                <td>3-0</td>
+                                <td>ابطال </td>
+                                <td>65%-40%</td>
+                                <td>25-20</td>
+                                <td>5-6</td>
+                                <td><a href="#" class="btn-schedule bg-transparent p-1">تفصيل المبارة</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+       <!-- من هنا يبدأ الفوتر -->
+       <div class="container-footer mt-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-sm-6">
+                    <div class="footer-right position-relative pt-5">
+                        <div class="about-footer d-flex align-items-center justify-content-start">
+                            <img class="position-absolute" width="100px" height="100px" src="./assets/images/logo.png" alt="" style="right:-15px;">
+                            <img style="visibility: hidden;" width="100px" height="100px" src="./assets/images/logo.png" alt="">
+                            <h1  class="opacity-75 position-absolute pt-3 fs-5" style="right:100px;">اسم الموقع</h1>
+                        </div>
+                        <p class="my-3 lead">
+                            هذا الموقع خاص ب اخبار الريضة و المقالات الرياضية نستعرض كل من نتائج المباريات و غيرها من الامور 
+                            هذا الموقع خاص ب اخبار الريضة و المقالات الرياضية نستعرض كل من نتائج المباريات و غيرها من الامور 
+                            هذا الموقع خاص ب اخبار الريضة و المقالات الرياضية نستعرض كل من نتائج المباريات و غيرها من الامور 
+                            هذا الموقع خاص ب اخبار الريضة و المقالات الرياضية نستعرض كل من نتائج المباريات و غيرها من الامور 
+                            هذا الموقع خاص ب اخبار الريضة و المقالات الرياضية نستعرض كل من نتائج المباريات و غيرها من الامور 
+                            هذا الموقع خاص ب اخبار الريضة و المقالات الرياضية نستعرض كل من نتائج المباريات و غيرها من الامور 
+                        </p>
+                        <ul class="icon-soical-footer list-unstyled m-0 p-0 d-flex gap-2 justify-content-between align-items-center flex-wrap" >
+                            <li class="d-flex justify-content-center align-items-center flex-column p-2 p-md-3 p-lg-2 p-xl-3">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>اسم المستخدم</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-center flex-column p-2 p-md-3 p-lg-2 p-xl-3">
+                                <i class="fa-brands fa-twitter"></i>
+                                <span>اسم المستخدم</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-center flex-column p-2 p-md-3 p-lg-2 p-xl-3">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>اسم المستخدم</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-center flex-column p-2 p-md-3 p-lg-2 p-xl-3">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>اسم المستخدم</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-center flex-column p-2 p-md-3 p-lg-2 p-xl-3">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اسم المستخدم</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="contact-footer pt-0 pt-sm-5">
+                        <h2 class="opacity-75 fs-5">التواصل معنا</h2>
+                        <p>من خلال هذا الفورم يمكن اراسل رسالة و ستم الرد عليك في غضون 24 ساعة</p>
+                        <form action="#" class="d-flex gap-2 flex-column">
+                            <input class="form-controls p-2" type="text" placeholder="الرجاء ادخل اليميل الخاص بك">
+                            <textarea class="form-controls" name="" id=""></textarea>
+                            <button class="form-controls p-2">ارسال الرسالة </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="club-footer list-unstyled m-0 p-0 py-5  d-flex justify-content-center gap-1 gap-sm-4 flex-wrap">
+                    <li>
+                        <img width="100px" height="100px" src="./assets/images/club/Barcelona.png" alt="">
+                    </li>
+                    <li>
+                        <img width="100px" height="100px" src="./assets/images/club/Manchester.png" alt="">
+                    </li>
+                    <li>
+                        <img width="100px" height="100px" src="./assets/images/club/Barcelona.png" alt="">
+                    </li>
+                    <li>
+                        <img width="100px" height="100px" src="./assets/images/club/Manchester.png" alt="">
+                    </li>
+                    <li>
+                        <img width="100px" height="100px" src="./assets/images/club/Barcelona.png" alt="">
+                    </li>
+                    <li>
+                        <img width="100px" height="100px" src="./assets/images/club/Manchester.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+             <div class="container d-flex align-items-center justify-content-between">
+                 <div class="navfooter py-3">
+                     <ul class="list-unstyled m-0 p-0 d-flex gap-4 align-items-center justify-content-end">
+                         <li><a href="#">الرئيسية</a></li>
+                         <li><a href="#">الاخبار</a></li>
+                         <li><a href="#">الدوريات</a></li>
+                         <li><a href="#">الاعبين</a></li>
+                         <li><a href="#">النوادي</a></li>
+                     </ul>
+                 </div> 
+                 <div class="copyright py-3">جميع الحقوق محفوظة <span>2022</span> </div>    
+             </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="./assets/script.js"></script>
+</body>
+</html>
